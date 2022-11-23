@@ -7,6 +7,7 @@ Empezamos, como casi siempre, instalando nuestro servicio.
 Conviene primero comprobar que todo esté al día:
 
 > `sudo apt update`
+> 
 > `sudo apt upgrade`
 
 Y luego ya instalamos el servicio:
@@ -34,6 +35,7 @@ Nos quedaría, todavía, hacer un paso más de configuración:
 **Configura al usuario anónimo para que pueda descargar archivos existentes en el directorio /srv/public del servidor (debe configurar el directorio también).** En el bloque `<Anonymous ~ftp>(...)</Anonymous>` viene definido por defecto que el usuario anónimo será el usuario ftp. Si creamos el directorio `/srv/public` y se lo asignamos como home al usuario ftp, ya estaría configurado.
 
 > `sudo mkdir /srv/public`
+> 
 > `sudo usermod -m -d /srv/public ftp`
 
 ## Crear un certificado auto firmado
